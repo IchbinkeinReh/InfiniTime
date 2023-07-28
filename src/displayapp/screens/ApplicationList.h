@@ -54,15 +54,12 @@ namespace Pinetime {
           {Symbols::drum, Apps::Metronome},
           {Symbols::map, Apps::Navigation},
 
-          //{Symbols::birthdayCake, Apps::Birthday},
-          {Symbols::none, Apps::None},
-          {Symbols::none, Apps::None},
+          {Symbols::dice, Apps::Dice},
+          {Symbols::birthdayCake, Apps::Birthday},
           {Symbols::none, Apps::None},
           {Symbols::none, Apps::None},
           {Symbols::none, Apps::None},
           {Symbols::none, Apps::None}
-
-          // {"M", Apps::Motion},
         }};
         ScreenList<nScreens> screens;
       };
