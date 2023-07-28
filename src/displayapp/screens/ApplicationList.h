@@ -56,7 +56,7 @@ namespace Pinetime {
 
           {Symbols::dice, Apps::Dice},
           {Symbols::birthdayCake, Apps::Birthday},
-          {Symbols::none, Apps::None},
+          {Symbols::calculator, Apps::Calculator},
           {Symbols::none, Apps::None},
           {Symbols::none, Apps::None},
           {Symbols::none, Apps::None}
