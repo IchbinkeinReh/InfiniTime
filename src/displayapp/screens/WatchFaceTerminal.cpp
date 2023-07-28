@@ -44,11 +44,15 @@ WatchFaceTerminal::WatchFaceTerminal(Controllers::DateTime& dateTimeController,
 
   label_prompt_1 = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_align(label_prompt_1, lv_scr_act(), LV_ALIGN_IN_LEFT_MID, 0, -80);
-  lv_label_set_text_static(label_prompt_1, "user@watch:~ $ now");
+  lv_label_set_text_static(label_prompt_1, "patrick@watch: now");
 
   label_prompt_2 = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_align(label_prompt_2, lv_scr_act(), LV_ALIGN_IN_LEFT_MID, 0, 60);
-  lv_label_set_text_static(label_prompt_2, "user@watch:~ $");
+  lv_label_set_text_static(label_prompt_2, "patrick@watch: ily");
+
+  label_love = lv_label_create(lv_scr_act(), nullptr);
+  lv_label_set_recolor(label_love, true);
+  lv_obj_align(label_love, lv_scr_act(), LV_ALIGN_IN_LEFT_MID, 0, 80);
 
   label_time = lv_label_create(lv_scr_act(), nullptr);
   lv_label_set_recolor(label_time, true);
@@ -123,6 +127,12 @@ void WatchFaceTerminal::Refresh() {
       lv_label_set_text_fmt(label_time, "[TIME]#11cc55 %02d:%02d:%02d %s#", hour, minute, second, ampmChar);
     } else {
       lv_label_set_text_fmt(label_time, "[TIME]#11cc55 %02d:%02d:%02d", hour, minute, second);
+    }
+
+    if (second % 2 == 0) {
+      lv_label_set_text_fmt(label_love, "A + P = #ff0000 \xEF\x80\x84#");
+    } else {
+      lv_label_set_text_fmt(label_love, "A + P = #ffa500 \xEF\x80\x84#");
     }
 
     currentDate = std::chrono::time_point_cast<days>(currentDateTime.Get());
