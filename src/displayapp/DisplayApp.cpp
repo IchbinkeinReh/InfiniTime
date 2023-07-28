@@ -14,6 +14,8 @@
 #include "displayapp/screens/Clock.h"
 #include "displayapp/screens/FirmwareUpdate.h"
 #include "displayapp/screens/FirmwareValidation.h"
+#include "displayapp/screens/Gallery.h"
+#include "displayapp/screens/Birthday.h"
 #include "displayapp/screens/InfiniPaint.h"
 #include "displayapp/screens/Paddle.h"
 #include "displayapp/screens/StopWatch.h"
@@ -547,6 +549,9 @@ void DisplayApp::LoadScreen(Apps app, DisplayApp::FullRefreshDirections directio
     */
     case Apps::Steps:
       currentScreen = std::make_unique<Screens::Steps>(motionController, settingsController);
+      break;
+    case Apps::Birthday:
+      currentScreen = std::make_unique<Screens::Birthday>(this);
       break;
   }
   currentApp = app;
