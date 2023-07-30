@@ -27,8 +27,8 @@ namespace Pinetime {
       private:
         Pinetime::Components::LittleVgl& lvgl;
         Controllers::MotorController& motor;
-        static constexpr uint16_t width = 10;
-        static constexpr uint16_t height = 10;
+        static constexpr uint16_t width = 1;
+        static constexpr uint16_t height = 1;
         static constexpr uint16_t bufferSize = width * height;
         lv_color_t b[bufferSize];
         lv_color_t selectColor = LV_COLOR_WHITE;

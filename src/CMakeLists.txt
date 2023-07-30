@@ -390,14 +390,12 @@ list(APPEND SOURCE_FILES
         displayapp/screens/Weather.cpp
         displayapp/screens/Navigation.cpp
         displayapp/screens/Metronome.cpp
-        displayapp/screens/Motion.cpp
         displayapp/screens/Calculator.cpp
         displayapp/screens/FirmwareValidation.cpp
         displayapp/screens/ApplicationList.cpp
         displayapp/screens/Notifications.cpp
         displayapp/screens/Twos.cpp
         displayapp/screens/HeartRate.cpp
-        displayapp/screens/Motion.cpp
         displayapp/screens/FlashLight.cpp
         displayapp/screens/List.cpp
         displayapp/screens/CheckboxList.cpp
@@ -619,7 +617,6 @@ set(INCLUDE_FILES
         displayapp/screens/Notifications.h
         displayapp/screens/HeartRate.h
         displayapp/screens/Metronome.h
-        displayapp/screens/Motion.h
         displayapp/screens/Timer.h
         displayapp/screens/Dice.h
         displayapp/screens/Alarm.h

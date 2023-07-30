@@ -25,7 +25,6 @@ namespace Pinetime {
       Navigation,
       StopWatch,
       Metronome,
-      Motion,
       Steps,
       Dice,
       PassKey,

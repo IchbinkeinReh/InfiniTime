@@ -44,11 +44,11 @@ WatchFaceTerminal::WatchFaceTerminal(Controllers::DateTime& dateTimeController,
 
   label_prompt_1 = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_align(label_prompt_1, lv_scr_act(), LV_ALIGN_IN_LEFT_MID, 0, -80);
-  lv_label_set_text_static(label_prompt_1, "patrick@watch: now");
+  lv_label_set_text_static(label_prompt_1, "arina@watch: now");
 
   label_prompt_2 = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_align(label_prompt_2, lv_scr_act(), LV_ALIGN_IN_LEFT_MID, 0, 60);
-  lv_label_set_text_static(label_prompt_2, "patrick@watch: ily");
+  lv_label_set_text_static(label_prompt_2, "arina@watch: ily");
 
   label_love = lv_label_create(lv_scr_act(), nullptr);
   lv_label_set_recolor(label_love, true);
